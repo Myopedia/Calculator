@@ -1,0 +1,50 @@
+/**
+ * Myopedia Calculator - Recipe Calorie Calculator
+ * ------------------------------------------------
+ * Calculates total calories in a recipe based on ingredient data.
+ * 
+ * Usage:
+ *   node recipe_calorie_calculator.js
+ * 
+ * By Myopedia | https://myopedia.org
+ */
+
+import readline from "readline";
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+console.log("=== Myopedia Recipe Calorie Calculator ===");
+
+rl.question("How many ingredients are in your recipe? ", (countInput) => {
+  const count = parseInt(countInput);
+  if (isNaN(count) || count <= 0) {
+    console.log("Invalid input.");
+    rl.close();
+    return;
+  }
+
+  let totalCalories = 0;
+  let processed = 0;
+
+  const askIngredient = () => {
+    rl.question(`\nEnter ingredient name: `, (name) => {
+      rl.question(`Calories per 100g for ${name}: `, (calInput) => {
+        rl.question(`Grams of ${name} used: `, (gramsInput) => {
+          const calPer100 = parseFloat(calInput);
+          const grams = parseFloat(gramsInput);
+
+          if (isNaN(calPer100) || isNaN(grams)) {
+            console.log("Invalid numbers entered. Skipping ingredient.");
+          } else {
+            const ingredientCalories = (calPer100 * grams) / 100;
+            totalCalories += ingredientCalories;
+          }
+
+          processed++;
+          if (processed < count) {
+            askIngredient();
+          } else {
+            rl
