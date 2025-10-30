@@ -1,4 +1,4 @@
-# Myopedia Calculator
+# Myopedia – BMI, MMR & Recipe Calorie Calculator
 
 The **Myopedia Calculator** is an open-source suite of **fitness, bodybuilding, and nutrition calculators** developed by [Myopedia](https://myopedia.org). It provides scientifically grounded, command-line tools to compute essential **health and performance metrics** — including calorie needs, macronutrient breakdowns, body composition, and recipe calorie estimates.
 
