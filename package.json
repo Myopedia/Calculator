@@ -1,0 +1,7 @@
+{
+  "name": "myopedia-calculator",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "CLI-based health and fitness calculator by Myopedia",
+  "main": "main.js"
+}
