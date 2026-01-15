@@ -156,6 +156,8 @@ Below are detailed, SEO-friendly explanations for each calculator — what it do
 **File:** `macronutrient_split.js`  
 **Purpose:** Converts a calorie target into **protein, fat, and carbohydrate** grams using a practical default split inspired by bodybuilding and performance nutrition: **30% protein, 25% fat, 45% carbohydrates**. Adapt ratios for high‑protein cuts, endurance blocks, or lower‑carb approaches as needed.
 
+[Dietary Protein 101 – by Harald Ragnarok](https://github.com/Myopedia/Calculator/blob/main/Dietary%20Protein%20101%20%E2%80%93%20by%20Senior%20Editor%20Harald%20Ragnarok.pdf)
+
 **Macro energy values:** Protein = 4 kcal/g; Carbohydrates = 4 kcal/g; Fat = 9 kcal/g
 
 **How it helps:**
